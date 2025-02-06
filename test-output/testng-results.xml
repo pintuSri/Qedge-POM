@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Admin"}
-  (Session info: chrome=133.0.6943.54)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8ba351f9888b5dc753c0c034bf6a0c6, findElement {using=link text, value=Admin}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.54, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Interia\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56589/devtoo..., se:cdpVersion: 133.0.6943.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8ba351f9888b5dc753c0c034bf6a0c6]]>
-    </line>
-    <line>
-      <![CDATA[Login failed message: Invalid credentials]]>
+      <![CDATA[Login Success]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-02-06T11:25:04 IST" name="Orange HRM Test Cases" finished-at="2025-02-06T11:25:15 IST" duration-ms="10849">
+  <suite started-at="2025-02-06T13:06:04 IST" name="Orange HRM Test Cases" finished-at="2025-02-06T13:06:37 IST" duration-ms="32361">
     <groups>
     </groups>
-    <test started-at="2025-02-06T11:25:04 IST" name="Admin Login Test" finished-at="2025-02-06T11:25:15 IST" duration-ms="10849">
+    <test started-at="2025-02-06T13:06:04 IST" name="Admin Login Test" finished-at="2025-02-06T13:06:37 IST" duration-ms="32361">
       <class name="DriverFactory.AdminLoginTestCase">
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:DriverFactory.AdminLoginTestCase@548d708a]" started-at="2025-02-06T11:24:57 IST" name="launchApp" finished-at="2025-02-06T11:25:04 IST" duration-ms="6921" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:DriverFactory.AdminLoginTestCase@3a7442c7]" started-at="2025-02-06T13:06:04 IST" name="launchApp" finished-at="2025-02-06T13:06:10 IST" duration-ms="6094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:DriverFactory.AdminLoginTestCase@548d708a]" started-at="2025-02-06T11:25:04 IST" name="loginTest" finished-at="2025-02-06T11:25:15 IST" duration-ms="10810" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:DriverFactory.AdminLoginTestCase@3a7442c7]" started-at="2025-02-06T13:06:11 IST" name="loginTest" finished-at="2025-02-06T13:06:16 IST" duration-ms="5662" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin1]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
@@ -40,26 +29,66 @@ Session ID: d8ba351f9888b5dc753c0c034bf6a0c6]]>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Admin"}
-  (Session info: chrome=133.0.6943.54)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8ba351f9888b5dc753c0c034bf6a0c6, findElement {using=link text, value=Admin}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.54, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Interia\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56589/devtoo..., se:cdpVersion: 133.0.6943.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8ba351f9888b5dc753c0c034bf6a0c6]]>
-            </line>
-            <line>
-              <![CDATA[Login failed message: Invalid credentials]]>
+              <![CDATA[Login Success]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:DriverFactory.AdminLoginTestCase@548d708a]" started-at="2025-02-06T11:25:15 IST" name="closeApp" finished-at="2025-02-06T11:25:15 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:DriverFactory.AdminLoginTestCase@3a7442c7]" started-at="2025-02-06T13:06:16 IST" name="closeApp" finished-at="2025-02-06T13:06:16 IST" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- DriverFactory.AdminLoginTestCase -->
+      <class name="DriverFactory.AddNewEmployeeTestCase">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:DriverFactory.AddNewEmployeeTestCase@742ff096]" started-at="2025-02-06T13:06:16 IST" name="launchApp" finished-at="2025-02-06T13:06:22 IST" duration-ms="5480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="addNewEmployee(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DriverFactory.AddNewEmployeeTestCase@742ff096]" started-at="2025-02-06T13:06:22 IST" name="addNewEmployee" finished-at="2025-02-06T13:06:37 IST" duration-ms="14682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qedge123!@#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Saara]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Saaram]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Saaram123!@#]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Saaram123!@#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmployee -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:DriverFactory.AddNewEmployeeTestCase@742ff096]" started-at="2025-02-06T13:06:37 IST" name="closeApp" finished-at="2025-02-06T13:06:37 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- DriverFactory.AddNewEmployeeTestCase -->
     </test> <!-- Admin Login Test -->
   </suite> <!-- Orange HRM Test Cases -->
 </testng-results>

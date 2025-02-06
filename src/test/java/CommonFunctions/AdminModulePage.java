@@ -5,14 +5,19 @@ package CommonFunctions;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
-public class AdminModulePage {
+import Utility.AppUtils;
+
+public class AdminModulePage extends AppUtils{
 	
 //	Define Object Repository
 	
@@ -22,6 +27,30 @@ public class AdminModulePage {
 
 	@FindBy(linkText = "PIM")
 	WebElement objPIM;
+	
+	@FindBy(id = "btnAdd")
+	WebElement objAddEmployeeButton;
+	
+	@FindBy(id = "firstName")
+	WebElement objFirstName;
+	
+	@FindBy(id = "lastName")
+	WebElement objLastName;
+	
+	@FindBy(id = "chkLogin")
+	WebElement objCreateLoginDetailsCheckBox;
+	
+	@FindBy(id = "user_name")
+	WebElement objUserName;
+	
+	@FindBy(id = "user_password")
+	WebElement objUserPassword;
+	
+	@FindBy(id = "re_password")
+	WebElement objConfirmPassword;
+	
+	@FindBy(id = "btnSave")
+	WebElement objSaveButton;
 	
 	@FindBy(linkText = "Admin")
 	WebElement objAdminModule;
@@ -44,6 +73,21 @@ public class AdminModulePage {
 	 	System.out.println();
 	 	Reporter.log("Login Successfull");
 		
+	}
+	
+	public void addNewEmployee(String firstName, String lastName, String userName, String password, String confrimPwd) throws Throwable {
+		objPIM.click();
+		Thread.sleep(2000);
+		objAddEmployeeButton.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(objFirstName));
+		objFirstName.sendKeys(firstName);
+		objLastName.sendKeys(lastName);
+		objCreateLoginDetailsCheckBox.click();
+		objUserName.sendKeys(userName);
+		objUserPassword.sendKeys(password);
+		objConfirmPassword.sendKeys(confrimPwd);
+		objSaveButton.click();
 	}
 	
 

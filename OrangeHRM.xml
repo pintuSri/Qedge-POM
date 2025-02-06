@@ -1,9 +1,17 @@
 <suite name="Orange HRM Test Cases">
 	<test name="Admin Login Test">
-	<parameter name="userName" value="Admin1"></parameter>
+	<parameter name="userName" value="Admin"></parameter>
 	<parameter name="Password" value="Qedge123!@#"></parameter>
+	
+	<parameter name="firstName" value="Saara"></parameter>
+	<parameter name="lastName" value="M"></parameter>
+	
+	<parameter name="uName" value="Saaram"></parameter>
+	<parameter name="pword" value="Saaram123!@#"></parameter>
+	<parameter name="cPassword" value="Saaram123!@#"></parameter>
 		<classes>
 			<class name="DriverFactory.AdminLoginTestCase"></class>
+			<class name="DriverFactory.AddNewEmployeeTestCase"></class>
 		</classes>
 	</test>
 </suite>
