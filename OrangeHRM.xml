@@ -1,6 +1,6 @@
 <suite name="Orange HRM Test Cases">
 	<test name="Admin Login Test">
-	<parameter name="userName" value="Admin"></parameter>
+	<parameter name="userName" value="Admin1"></parameter>
 	<parameter name="Password" value="Qedge123!@#"></parameter>
 		<classes>
 			<class name="DriverFactory.AdminLoginTestCase"></class>

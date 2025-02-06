@@ -19,14 +19,13 @@ public class AdminModulePage {
 	
 	@FindBy(id = "mainMenuFirstLevelUnorderedList")
 	WebElement objModuleList;
-	
-	@FindBy(linkText = "Admin")
-	WebElement objAdminModule;
-	
+
 	@FindBy(linkText = "PIM")
 	WebElement objPIM;
 	
-	
+	@FindBy(linkText = "Admin")
+	WebElement objAdminModule;
+
 //	Define Methods
 	
 	public void getModulesList() throws Throwable {
@@ -47,9 +46,5 @@ public class AdminModulePage {
 		
 	}
 	
-	public void pim() {
-		AdminModulePage amp = new AdminModulePage();
-		amp.objPIM.click();
-	}
 
 }

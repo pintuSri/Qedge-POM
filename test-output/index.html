@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Orange_HRM_Test_Cases">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Orange_HRM_Test_Cases" title="DriverFactory.AdminLoginTestCase" class="method navigator-link" hash-for-method="LoginTest(Admin, Qedge123!@#)">LoginTest(Admin, Qedge123!@#)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Orange_HRM_Test_Cases" title="DriverFactory.AdminLoginTestCase" class="method navigator-link" hash-for-method="loginTest(Admin1, Qedge123!@#)">loginTest(Admin1, Qedge123!@#)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Orange_HRM_Test_Cases -->
@@ -126,10 +126,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTest(Admin, Qedge123!@#)">
-                  </a> <!-- LoginTest(Admin, Qedge123!@#) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(Admin,Qedge123!@#)</span>
+                  <a name="loginTest(Admin1, Qedge123!@#)">
+                  </a> <!-- loginTest(Admin1, Qedge123!@#) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(Admin1,Qedge123!@#)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +145,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Orange HRM Test Cases&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Admin Login Test&quot;&gt;
-    &lt;parameter name=&quot;userName&quot; value=&quot;Admin&quot;/&gt;
+    &lt;parameter name=&quot;userName&quot; value=&quot;Admin1&quot;/&gt;
     &lt;parameter name=&quot;Password&quot; value=&quot;Qedge123!@#&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;DriverFactory.AdminLoginTestCase&quot;/&gt;
@@ -190,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginTest')
+data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'DriverFactory.AdminLoginTestCase')
-data.setCell(0, 3, 11993);
+data.setCell(0, 3, 10810);
 window.suiteTableData['Orange_HRM_Test_Cases']= { tableData: data, tableDiv: 'times-div-Orange_HRM_Test_Cases'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Orange_HRM_Test_Cases">
               </div> <!-- times-div-Orange_HRM_Test_Cases -->
             </div> <!-- times-div -->
@@ -209,40 +209,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">LoginTest(Admin, Qedge123!@#)</span>
+              <span class="reporter-method-name">loginTest(Admin1, Qedge123!@#)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">1: Module Name: Admin
-</span>
-                <span class="reporter-method-output">2: Module Name: PIM
-</span>
-                <span class="reporter-method-output">3: Module Name: Leave
-</span>
-                <span class="reporter-method-output">4: Module Name: Time
-</span>
-                <span class="reporter-method-output">5: Module Name: Recruitment
-</span>
-                <span class="reporter-method-output">6: Module Name: My Info
-</span>
-                <span class="reporter-method-output">7: Module Name: Performance
-</span>
-                <span class="reporter-method-output">8: Module Name: Dashboard
-</span>
-                <span class="reporter-method-output">9: Module Name: Directory
-</span>
-                <span class="reporter-method-output">10: Module Name: Maintenance
-</span>
-                <span class="reporter-method-output">11: Module Name: Buzz
-</span>
-                <span class="reporter-method-output">Login Successfull</span>
+                <span class="reporter-method-output">no such element: Unable to locate element: {"method":"link text","selector":"Admin"}
+  (Session info: chrome=133.0.6943.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8ba351f9888b5dc753c0c034bf6a0c6, findElement {using=link text, value=Admin}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.54, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Interia\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56589/devtoo..., se:cdpVersion: 133.0.6943.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ba351f9888b5dc753c0c034bf6a0c6</span>
+                <span class="reporter-method-output">Login failed message: Invalid credentials</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Orange_HRM_Test_Cases" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">DriverFactory.AdminLoginTestCase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">LoginNegetiveTestCase</span>
+                <br/>
+                <span class="ignored-method-name">LoginPositiveTestCase</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Orange_HRM_Test_Cases" class="panel">
@@ -257,12 +253,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">LoginTest(Admin, Qedge123!@#)</span>
-                <span class="method-start">6202 ms</span>
+                <span class="method-name">loginTest(Admin1, Qedge123!@#)</span>
+                <span class="method-start">6956 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">18259 ms</span>
+                <span class="method-start">17821 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
