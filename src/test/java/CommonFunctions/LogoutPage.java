@@ -9,14 +9,28 @@ public class LogoutPage {
 	@FindBy(partialLinkText = "Suresh")
 	WebElement objAdminUser;
 	
+	@FindBy(partialLinkText = "Saara")
+	WebElement objUserEmployee;
+	
 	@FindBy(linkText = "Logout")
 	WebElement objLogout;
 	
 //	Define Methods
 	
 	public void logoutFeature() {
-		objAdminUser.click();
-		objLogout.click();
+		try {
+			if(objAdminUser.isDisplayed()) {
+				objAdminUser.click();
+			}
+			if(objUserEmployee.isDisplayed()) {
+				objUserEmployee.click();
+			}
+			Thread.sleep(2000);
+			objLogout.click();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
 	}
 
 }

@@ -24,7 +24,7 @@ public class AppUtils {
 	public static WebDriver driver;
 	public static Properties p;
 //	Open Browser
-	@BeforeClass
+	@BeforeTest
 	public void launchApp() throws Throwable{
 		p = new Properties();
 		p.load(new FileInputStream("ObjectRepositoy/OR.properties"));
@@ -57,7 +57,7 @@ public class AppUtils {
 //		
 //	}
 	
-	@AfterClass
+	@AfterTest
 	public void closeApp() {
 		driver.quit();
 	}

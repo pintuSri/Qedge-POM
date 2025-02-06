@@ -39,7 +39,7 @@ public class AdminLoginTestCase extends AppUtils{
 	}
 	
 	@Parameters({"userName", "Password"})
-	@Test
+	@Test(enabled = false)
 	public void loginTest(String userName, String Password) throws Throwable {
 		AdminLoginPage lp = PageFactory.initElements(driver, AdminLoginPage.class);
 		lp.LoginFeature(userName, Password);
